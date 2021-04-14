@@ -1,0 +1,8 @@
+opencv-python
+flask
+flask_socketio
+flask_sqlalchemy
+imagezmq
+crypto
+jsonpickle
+pycryptodome

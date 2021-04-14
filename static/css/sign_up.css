@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#content {
+    width: 960px;
+    height: auto;
+    margin: 0px auto;
+    /* text-align: center; */
+    margin-top: 29px;
+}
+
+.box {
+    background-size: cover;
+    background: #2a5262;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url("images/bread.png");
+
+}
+
+.box a img {
+    width: 300px;
+    /* margin-top: 50px; */
+    /* margin-left: 50px; */
+    margin: 21px 0px 10px 163px;
+    padding: 20px 126px;
+}
+
+.box .bt {
+
+    margin: 0px;
+    width: 1160px;
+
+}
+
+.box .bt .mct {
+    display: inline-flex;
+    width: 140px;
+    justify-content: center;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 60px;
+    transition: all 0.5s ease-in-out;
+}
+
+.box .bt .mct a {
+    color: white;
+    text-decoration: none;
+}
+
+.box .bt .mct:hover {
+    transform: translateY(-20px);
+}
+
+/* header .bt #a:hover{
+    border: 10px solid aqua;
+}
+header .bt #b:hover{
+    border: 10px solid #5286ab;
+}
+header .bt #c:hover{
+    border: 10px solid #9b473d;
+}
+header .bt #d:hover{
+    border: 10px solid #cb7802;
+} */
+#a {
+    float: left;
+
+    background: aqua;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+#b {
+    background: #5286ab;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+#c {
+    background: #9b473d;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+#d {
+    background: #cb7802;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    margin: 0 auto;
+    height: 40px;
+    background: #2a5262;
+}
+
+.menu ul {
+    list-style: none;
+    text-align: center;
+    margin-left: 273px;
+}
+
+.menu ul li {
+    line-height: 40px;
+    float: left;
+    padding: 0 15px;
+}
+
+.menu ul li a {
+
+    color: #ffffff;
+    font-size: 14px;
+
+
+}
+
+.search {
+
+    line-height: 38px;
+    padding: 0 5px;
+}
+
+.search input {
+    width: 250px;
+    height: 25px;
+    border: 1px solid #54272e;
+}
+
+h1 {
+    text-align: center;
+}
+
+.fullname,
+.mail_number,
+.password {
+    margin: 0px 209px 0px 210px;
+}
+
+#content input {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+#content .mail_number input {
+    padding: 10px 269px 10px 9px;
+}
+
+#content .password input {
+    padding: 10px 269px 10px 9px;
+}
+
+#content label {
+    font-size: 22px;
+    text-align: left;
+
+}
+
+.date {
+    margin-left: 110px;
+}
+
+form {
+    display: flex;
+    margin-left: 220px;
+}
+
+.text {
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.date select {
+    padding: 15px 71px 13px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.male,
+.female,
+.orther {
+    border: 1px solid black;
+    width: fit-content;
+    margin: 0px;
+    padding: 5px 49px 5px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.bottom {
+    text-align: center;
+
+}
+
+.bottom button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: rgb(12, 118, 12);
+
+    font-size: 18px;
+    color: white;
+}
+
+.bottom button:hover {
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: green;
+    font-size: 18px;
+    color: white;
+}
+
+#footer {
+    background-size: cover;
+    background: #2a5262;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url("images/bread.png");
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer .container {
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 50px;
+    margin-left: 216px;
+
+}
+
+.logo,
+.subject,
+.facebook {
+    margin-right: 145px;
+}
+
+#footer .container .logo {
+    width: 355px;
+    margin-left: 30px;
+}
+
+#footer .container .logo a img {
+    width: 200px;
+}
+
+#footer .container .logo p {
+    padding-top: 33px;
+    line-height: 29px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#footer .container .category {
+    width: 220px;
+    /* flex-basis: 192px; */
+}
+
+#footer .container .category h3 {
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+}
+
+#footer .container .category ul {
+    padding-top: 27px;
+    line-height: 40px;
+    list-style-type: disc;
+
+}
+
+#footer .container a {
+    color: white;
+}
+
+#footer .container .subject h3 {
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+}
+
+#footer .container .subject ul {
+    padding-top: 27px;
+    line-height: 40px;
+    list-style-type: disc;
+}
+
+#footer .container .facebook {
+    padding-top: 50px;
+}
+
+/* and footer  */
+#copyright {
+    background: #ffffff;
+    color: black;
+}
+
+#copyright .container {
+    text-align: center;
+}
+
+.end .above .social {
+    width: 200px;
+    justify-content: center;
+    margin-left: 100px;
+    color: white;
+}
+
+.end .above .social ol {
+    float: left;
+    list-style: none;
+}
+
+.end .above .social ol li a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    background: #ccc;
+    display: block;
+    color: #333;
+    border-radius: 5px;
+}
+
+.end .above .social ol li a i {
+    width: 100%;
+    float: left;
+    height: 100%;
+    line-height: 31px;
+    transition: all 0.3s ease-in-out;
+}
+
+.end .above .social ol li a:hover {
+    color: #3b5999;
+}
+
+.end .above .social ol li a:hover i:nth-child(1) {
+    transform: translateY(-30px);
+    opacity: 0;
+}
+
+.end .above .social ol li a:hover i:nth-child(2) {
+    transform: translateY(-30px);
+    opacity: 1;
+}
+
+.end .above .social ol li a i:nth-child(2) {
+    opacity: 0;
+}

@@ -1,0 +1,81 @@
+  <!DOCTYPE html>
+  <head>
+    <title>Video Playback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <style>
+      body {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-2" style="color: #00e5ff" href="#"><b>(@_*)'</b></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-3 mb-2 mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="{{url_for('index')}}">Trang chủ</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" href="{{url_for('streaming')}}">Trực tiếp</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" style="color: #f50057" href="{{url_for('videoplayback')}}">Đã lưu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <div class="container">
+      	<h4 class="text-center">From KMA with nove (*_^)'</h4>
+      	<div class="row align-items-center">
+			  {% for video in videos %}
+      		<div class="col-md-4 p-4">
+      			<div class="card" style="width: 323px;">
+  					<video value="{{video.ten}}" class="srcVideo" width="320" height="240" controls>
+  						<!-- <source class="srcVideo" src="{{ url_for('static', filename='video/{}'.format(video.ten)) }}" value="{{video.ten}}" type="video/mp4" /> -->
+					  </video>
+  					<div class="card-body text-center">
+    					<b class="card-text">{{video.thoigian}}</b>
+  					</div>
+  					<!--
+  					<div class="card-footer text-center">
+    					<a href="#" class="btn btn-danger">Xóa</a>
+  					</div>
+  					-->
+	  			</div>
+      		</div>
+	  		{% endfor %}      		
+      	</div>
+      	
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.5.1.min.js') }}"></script>
+  <script type='text/javascript'>
+    $(document).ready(()=>{
+        var sources = document.getElementsByClassName("srcVideo");
+        for(let srcVideo of sources){
+            
+            $.ajax({
+              url:"/api/getVideo/"+srcVideo.getAttribute("value"),
+              type:'get',
+              dataType:'text',
+              success:(result)=>{
+                srcVideo.innerHTML ='<source src="data:video/webm;base64,'+result+'" type="video/mp4" />';
+              }
+            });        
+          }
+    })
+  </script>
+  <br>
+  <footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3">
+      ©2020 From KMA with love (*_^)'' 
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Nghiên Cứu khoa học </title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <!-- fevicon -->
+    <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/png" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+      .img {
+        border: 3px solid #f50057;
+        border-radius: 25px;
+      }
+    </style>
+</head>
+<!-- body -->
+
+<body class="main-layout ">
+    <!-- loader  -->
+    <!-- <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div> -->
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="{{url_for('index')}}"><img style="padding-top: 30px;"  type="image/jpg" src="{{ url_for('static', filename='img/KMA1.jpg') }}"
+                                            alt="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="location_icon_bottum_tt">
+                            <ul style="padding-top: 27px;">
+                                <li style="font-size: 18px;color: white; "><img  type="image/png" src="{{url_for('static',filename='icon/loc1.png')}}" />VietNam</li>
+                                <li style="font-size: 18px;color: white; "><img  type="image/png" src="{{url_for('static',filename='icon/email1.png')}}" />sieuquay2112@gmail.com</li>
+
+                                <li style="font-size: 18px;color: white; "><img  type="image/png" src="{{url_for('static',filename='icon/call1.png')}}" />0865700447</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 location_icon_bottum">
+                        <div class="row">
+                            <div class="col-md-8 ">
+                                <div class="menu-area">
+                                    <div class="limit-box">
+                                        <nav class="main-menu">
+                                            <ul class="menu-area-main">
+                                                <li class="active" style="padding: 0px 62px;">
+                                                 <a style="font-size: 20px;" href="{{url_for('index')}}">Home</a> </li>
+                                                <li style="padding: 0px 62px;"> <a style="font-size: 20px;" href="{{url_for('streaming')}}">Stream</a> </li>
+                                                <li style="padding: 0px 62px;"><a style="font-size: 20px;" href="{{url_for('videoplayback')}}">Playback</a></li>
+                                                <!-- <li style="padding: 0px 62px;"><a style="font-size: 20px;" href="{{url_for('streaming')}}">Login</a></li> -->
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                <form class="text" style="    padding-top: 10px;font-weight: bolder;">
+                                    <a href="{{url_for('streaming')}}">
+                                        <a class="buynow" href="{{url_for('login')}}" style="padding: 0px 62px; color: white; font-weight: 10px;padding-top: 200px; font-size: 20px">Login</a>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header inner -->
+    </header>
+
+    <!-- end header -->
+    <section class="slider_section">
+        <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
+           
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="first-slide" type="image/jpg" src="{{ url_for('static', filename='img/ba.jpg') }}" alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption relative">
+                            <h2 style="font-size: 60px; color: white; ">Login</h2>
+                            <span style="font-family: 'Roboto', sans-serif; font-size: 30px">Đề tài</span>
+
+                            <p style="font-family: 'Roboto', sans-serif;font-size: 20px">Xây dựng camera thông minh dựa
+                                trên học máy</p>  
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+<div>
+    <br>
+                                 
+        <div class="box" style="width: 500px; height: 500px; margin: 0 auto; background: #ccc; border-radius: 30px;box-shadow: 12px 18px 12px 0px;margin-bottom: 100px;text-align: center;">
+         <h1
+        style="margin-top: 100px; color: red; font-size: 40px;padding: 100px 30px 10px;font-weight: 400px;">FORM LOGIN</h1><br>
+<input
+        style="padding: 6px 124px 8px 5px;border-radius: 8px;margin-bottom: 15px" type="text"
+        name="name" id="name" placeholder="phone or email">
+           <br>
+                <input style="padding: 6px 124px 8px 5px;border-radius: 8px;margin-bottom: 15px;" type="password" name="password"
+                    id="password" placeholder="password">
+
+         <br>
+                <div style="margin-top: 18px ">
+                       <button
+                    style="border: 1px solid black; width: just-content;padding: 10px 30px; border-radius: 7px; color: white;background: green; margin-bottom: 24px; font-size: 15px;">LOGIN</button> 
+                    <a href="{{url_for('sign_up')}}" style="text-align: right; font-size: 15px; width: just-content; background: green;border: 1px solid black; border-radius: 7px; color: white; padding: 12px 25px;margin-left: 10px">Sign Up</a>
+                
+                </div>
+       
+    
+            </div>
+      <br>
+    <footr>
+        <div>
+            <div class="copyright">
+                <div class="container">
+                    <p>© 2021 Đề tài nghiên cứu camera thông minh</a></p>
+
+                </div>
+            </div>
+    </footr>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/source.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-3.0.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/plugin.js') }}"></script>
+    <!-- sidebar -->
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/custom.js') }}"></script>
+    <!-- javascript -->
+    <script type="text/javascript" src="{{ url_for('static',filename='js/owl.carousel.js') }}"></script>
+    <script type='text/javascript'>
+    $(document).ready(()=>{
+        var sources = document.getElementsByClassName("srcVideo");
+        for(let srcVideo of sources){
+            
+            $.ajax({
+              url:"/api/getVideo/"+srcVideo.getAttribute("value"),
+              type:'get',
+              dataType:'text',
+              success:(result)=>{
+                srcVideo.innerHTML ='<source src="data:video/webm;base64,'+result+'" type="video/mp4" />';
+              }
+            });        
+          }
+    })
+  </script>
+    <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+
+            $(".zoom").hover(function () {
+
+                $(this).addClass('transition');
+            }, function () {
+
+                $(this).removeClass('transition');
+            });
+        });
+    </script>
+    <script>
+        // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+        // Australia.
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: {
+                    lat: 40.645037,
+                    lng: -73.880224
+                },
+            });
+
+            var image = 'images/maps-and-flags.png';
+            var beachMarker = new google.maps.Marker({
+                position: {
+                    lat: 40.645037,
+                    lng: -73.880224
+                },
+                map: map,
+                icon: image
+            });
+        }
+    </script>
+    <!-- google map js -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+    <!-- end google map js -->
+</body>
+
+</html>

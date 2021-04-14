@@ -1,0 +1,2 @@
+Chạy các file server.py, control.py, crypto.py, yolov4.py.
+Sau đó qua Raspberry chạy clientRaspi.py
